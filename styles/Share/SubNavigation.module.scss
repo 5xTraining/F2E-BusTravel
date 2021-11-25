@@ -1,0 +1,37 @@
+.wrap {
+  @apply text-white w-full justify-center max-w-screen-md mx-auto mt-24 px-5 fixed bottom-0 left-1/2 lg:relative;
+  transform: translate(-50%);
+
+  @screen lg {
+    @apply left-auto static;
+    transform: none;
+  }
+
+  .search {
+    @apply bg-rose-500 rounded-lg w-full text-xl my-4 lg:my-2 lg:mx-3 cursor-pointer;
+  }
+
+  .nearby {
+    @apply bg-dark-red rounded-lg w-full text-xl lg:my-2 lg:mx-3;
+  }
+
+  .landingLink {
+    @apply flex items-center justify-center py-5;
+  }
+
+  .collectionLink {
+    @apply flex flex-col px-2 py-3 my-4;
+
+    p {
+      @apply mt-1;
+    }
+  }
+}
+
+.landingWrap {
+  @apply lg:flex pb-20;
+}
+
+.collectionWrap {
+  @apply grid grid-cols-2 gap-4 pb-12 bg-black lg:hidden;
+}

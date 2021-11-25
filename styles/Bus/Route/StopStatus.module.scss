@@ -1,0 +1,23 @@
+@mixin defaultButton {
+  @apply rounded-full text-xl w-[102px] inline-block text-center py-1 my-2 font-bold mr-3;
+}
+
+.default {
+  @include defaultButton;
+  @apply bg-gray-900 text-white;
+}
+
+.out {
+  @include defaultButton;
+  @apply bg-gray-900 text-gray-500 font-normal;
+}
+
+.closing {
+  @include defaultButton;
+  @apply bg-gray-900 text-rose-500;
+}
+
+.coming {
+  @include defaultButton;
+  @apply bg-rose-500 bg-opacity-30 text-rose-500;
+}

@@ -1,0 +1,33 @@
+.moreList {
+  @apply text-white px-3 h-full focus:outline-none;
+}
+
+.info {
+  @apply bg-gray-800 absolute w-full bottom-0 left-0 rounded-t-2xl;
+  animation-name: slideUp;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+
+  @screen lg {
+    @apply w-[446px] rounded-2xl left-1/2 top-1/2 bottom-auto;
+    transform: translate(-50%, -70%);
+    animation-name: none;
+  }
+
+  @keyframes slideUp {
+    from {
+      bottom: -400px;
+    }
+    to {
+      bottom: 0px;
+    }
+  }
+
+  .infoTitle {
+    @apply font-bold text-2xl py-4 border-b border-gray-700 px-5 text-gray-100;
+  }
+}
+
+.linkWrap {
+  @apply px-5 py-6 flex items-center justify-between text-xl w-full;
+}

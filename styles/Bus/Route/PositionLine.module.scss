@@ -1,0 +1,24 @@
+.wrap {
+  @apply relative;
+}
+
+.line {
+  @apply h-full border-r-2 inline-block mx-5 border-gray-800;
+}
+
+.target {
+  @apply absolute w-[14px] h-[14px] bg-rose-500 rounded-full left-1/2 top-1/2;
+  transform: translate(-50%, -50%);
+}
+
+.plateNumb {
+  @apply absolute flex justify-center text-center inline-block bg-rose-500 p-1 rounded text-white text-[9px] whitespace-nowrap left-1/2 top-1/2;
+  transform: translate(-50%, -160%);
+
+  &::before {
+    @apply inline-block border-[5px] absolute text-center;
+    content: "";
+    bottom: -9px;
+    border-color: theme("colors.rose.500") transparent transparent transparent;
+  }
+}

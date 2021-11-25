@@ -1,0 +1,18 @@
+.bg {
+  @apply bg-landing-page bg-no-repeat bg-cover;
+}
+
+.wrap {
+  @apply h-screen flex flex-col items-center justify-center -mt-16 lg:mt-0;
+  min-height: var(--app-height);
+  max-height: var(--app-height);
+
+  .title {
+    @apply text-gray-100 text-4xl lg:text-5xl tracking-wide flex justify-center items-center flex-col -mt-12 lg:mt-0;
+
+    &:after {
+      content: "";
+      @apply border-t-2 border-gray-100 block w-8 mt-5;
+    }
+  }
+}

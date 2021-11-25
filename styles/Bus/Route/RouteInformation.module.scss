@@ -1,0 +1,32 @@
+.header {
+  @apply px-4 bg-black lg:bg-desktop-black top-0 z-60 fixed w-full lg:top-16 h-[65px] text-white flex items-center lg:border-b border-gray-900;
+  max-width: 766px;
+
+  .title {
+    @apply text-[29px] font-bold text-white;
+  }
+}
+
+.wrap {
+  @apply px-6 lg:px-20 mt-3 lg:mt-[65px] text-gray-100;
+
+  .position {
+    @apply text-gray-100 text-xl text-center border-b border-gray-700 pb-2 lg:pt-8;
+  }
+
+  .infoWrap {
+    @apply my-3;
+
+    ul {
+      @apply list-disc ml-5;
+    }
+
+    h3 {
+      @apply text-rose-500 font-bold text-lg mb-1;
+    }
+
+    h4 {
+      @apply text-lg mb-1 text-rose-500;
+    }
+  }
+}

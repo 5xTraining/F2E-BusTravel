@@ -1,0 +1,7 @@
+.wrap {
+  @apply px-4 lg:px-24 mb-24 mt-3 lg:mt-20 lg:mb-3;
+
+  .title {
+    @apply text-gray-500 text-sm;
+  }
+}

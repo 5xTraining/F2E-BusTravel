@@ -1,0 +1,7 @@
+.wrap {
+  @apply bg-black fixed top-0 z-60 w-full px-5 h-[65px] shadow-lg flex items-center justify-between lg:hidden;
+
+  p {
+    @apply text-[28px] font-bold text-gray-100;
+  }
+}

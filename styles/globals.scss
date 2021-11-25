@@ -1,0 +1,29 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+html {
+  @apply bg-black lg:bg-desktop-black;
+  font-family: sans-serif, Roboto;
+}
+
+main {
+  @apply max-w-screen-md mx-auto bg-black mt-[64px] pb-2 mb-14 lg:mb-0 lg:border-l lg:border-r lg:border-gray-900 overflow-y-auto;
+
+  @screen lg {
+    min-height: calc(100vh - 105px);
+    max-height: calc(100vh - 105px);
+    overflow: -moz-hidden-unscrollable;
+    -ms-overflow-style: none;
+    width: calc(100vw + 18px);
+  }
+}
+
+main::-webkit-scrollbar {
+  @apply hidden;
+}
+
+button,
+a:focus {
+  @apply outline-none;
+}

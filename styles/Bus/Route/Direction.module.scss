@@ -1,0 +1,25 @@
+.direction {
+  @apply text-gray-500 flex justify-between bg-desktop-black fixed z-50 lg:fixed w-full lg:top-[128px];
+  max-width: 766px;
+
+  div {
+    @apply flex-1 text-center text-lg bg-black lg:bg-desktop-black;
+
+    input[type="radio"] {
+      @apply hidden;
+
+      &:checked + label {
+        @apply text-rose-500 border-rose-500;
+        background: linear-gradient(
+          180deg,
+          rgba(244, 63, 94, 0) 0%,
+          rgba(244, 63, 94, 0.3) 100%
+        );
+      }
+    }
+
+    label {
+      @apply block pt-4 pb-2 cursor-pointer border-b-2 border-gray-800;
+    }
+  }
+}

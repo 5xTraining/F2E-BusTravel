@@ -1,0 +1,35 @@
+.nav {
+  @apply fixed inset-x-0 bottom-0 w-full bg-black z-50 lg:bg-gray-900 lg:fixed lg:top-0 lg:bottom-auto;
+
+  .wrap {
+    @apply lg:flex lg:mx-auto lg:max-w-screen-lg items-center justify-between;
+
+    .logo {
+      @apply hidden px-4 lg:flex;
+    }
+
+    ul {
+      @apply flex text-gray-600;
+
+      li {
+        @apply flex-1 lg:flex-none;
+
+        a {
+          @apply flex flex-col items-center justify-center p-2 lg:p-5;
+        }
+
+        .linkIcon {
+          @apply lg:hidden;
+
+          & > svg {
+            width: 21px;
+          }
+        }
+
+        .linkText {
+          @apply text-xs mt-1 lg:text-sm;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.wrap {
+  @apply relative;
+
+  .bookMark {
+    @apply absolute right-2 top-3;
+  }
+
+  .contentWrap {
+    @apply px-4 py-3 bg-gray-900 rounded my-3 block;
+
+    .stationName {
+      @apply text-rose-500 text-xl font-bold border-b pb-2 border-gray-700;
+    }
+
+    .routes {
+      @apply text-gray-500 text-xs;
+    }
+  }
+}

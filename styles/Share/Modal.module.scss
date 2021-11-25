@@ -1,0 +1,21 @@
+.modalInfo {
+  @apply absolute bottom-0 w-full bg-gray-800 rounded-t-2xl z-100;
+  animation-name: slideUp;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+
+  @screen lg {
+    @apply w-[446px] rounded-2xl left-1/2 top-1/2 bottom-auto;
+    transform: translate(-50%, -70%);
+    animation-name: none;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    bottom: -400px;
+  }
+  to {
+    bottom: 0px;
+  }
+}

@@ -1,0 +1,24 @@
+.searchBar {
+  @apply px-4 py-3 bg-black h-[65px] flex lg:bg-desktop-black lg:px-16 lg:border-b lg:border-gray-900 fixed top-0 lg:top-[64px] w-full z-60;
+  max-width: 766px;
+}
+
+.searchForm {
+  @apply w-full flex flex-col items-center;
+
+  .wrap {
+    @apply flex items-center bg-gray-800 rounded px-3 text-gray-600 flex-row-reverse w-full;
+
+    .searchInput {
+      @apply w-full bg-gray-800 p-2 placeholder-gray-600 focus:outline-none text-white;
+
+      &:focus ~ span {
+        @apply text-white;
+      }
+
+      &:not(:placeholder-shown) ~ span {
+        @apply text-white;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.header {
+  @apply absolute top-0 lg:bg-desktop-black bg-black w-full px-[19px] lg:static h-[65px] flex items-center lg:border-b border-gray-900;
+}
+
+.wrap {
+  @apply px-[19px] md:px-20;
+
+  h1 {
+    @apply text-center font-bold border-b-[1px] border-gray-800 text-[20px] pt-6 pb-2 md:pt-10;
+  }
+
+  .contentWrap {
+    @apply pt-[41px];
+
+    h3 {
+      @apply text-rose-500 text-lg font-bold;
+    }
+
+    ul {
+      @apply list-disc pl-6;
+    }
+
+    a {
+      @apply text-rose-500 underline;
+    }
+
+    .imageWrap {
+      @apply text-center mt-[67px] md:mt-[55px];
+    }
+  }
+}

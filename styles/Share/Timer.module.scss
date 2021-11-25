@@ -1,0 +1,14 @@
+.wrap {
+  @apply fixed z-50 w-full bottom-[58px] lg:bottom-0 bg-gray-600 max-w-screen-md left-1/2;
+  transform: translate(-50%, -50%);
+
+  .text {
+    @apply text-gray-100 text-xs w-full text-right absolute bottom-1 pb-1 pr-2 pt-4;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+  }
+
+  .progress {
+    @apply bg-rose-700 pt-1 w-0;
+  }
+}

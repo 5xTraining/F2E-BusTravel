@@ -1,0 +1,37 @@
+{
+  "name": "berserk_pudding",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "yarn install && next dev",
+    "build": "yarn install && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "prettier --write . --loglevel silent && jest --coverage"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/pro-regular-svg-icons": "^5.15.4",
+    "@fortawesome/pro-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
+    "autoprefixer": "^10.4.0",
+    "axios": "^0.24.0",
+    "jest": "^27.3.1",
+    "jssha": "^3.2.0",
+    "next": "12.0.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sass": "^1.43.4",
+    "swr": "^1.0.1",
+    "tailwindcss": "^2.2.19"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.0",
+    "babel-jest": "^27.3.1",
+    "eslint": "7",
+    "eslint-config-next": "12.0.2",
+    "prettier": "^2.4.1",
+    "sass": "^1.43.4",
+    "tailwindcss": "^2.2.19"
+  }
+}

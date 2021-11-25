@@ -1,0 +1,18 @@
+.messgageContainer {
+  @apply fixed flex justify-center items-center top-4 left-0 right-0 mx-auto z-100;
+  width: 327px;
+  height: 59px;
+  border-radius: 3px;
+}
+
+.icon {
+  @apply absolute left-5 text-2xl;
+}
+
+.success {
+  @apply bg-teal-800 text-green-400;
+}
+
+.delete {
+  @apply bg-rose-800 text-red-400;
+}

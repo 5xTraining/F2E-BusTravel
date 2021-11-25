@@ -1,0 +1,15 @@
+.wrap {
+  @apply bg-gray-900 my-3 rounded flex justify-between items-center;
+
+  .info {
+    @apply flex-1 px-4 py-3;
+
+    .routePath {
+      @apply text-rose-500 font-bold text-xl;
+    }
+
+    .location {
+      @apply text-gray-300;
+    }
+  }
+}

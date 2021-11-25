@@ -1,0 +1,4 @@
+.wrap {
+  @apply text-xs border-t text-gray-500 border-gray-900 justify-between items-center px-2 py-3
+  w-full max-w-screen-md mx-auto hidden lg:flex;
+}

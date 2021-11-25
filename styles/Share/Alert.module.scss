@@ -1,0 +1,30 @@
+.wrap {
+  @apply flex flex-col items-center justify-center min-h-screen mt-0 mb-0;
+  min-height: var(--app-height);
+  max-height: var(--app-height);
+
+  @screen lg {
+    @apply mt-16;
+    min-height: calc(100vh - 105px);
+    max-height: calc(100vh - 105px);
+  }
+
+  p {
+    @apply text-gray-500 text-center mt-5 text-xl tracking-wide;
+  }
+}
+
+.innerWrap {
+  @apply flex flex-col items-center justify-center min-h-screen mt-0 mb-0;
+  min-height: calc(var(--app-height) - 128px);
+  max-height: calc(var(--app-height) - 128px);
+
+  @screen lg {
+    min-height: calc(100vh - 131px);
+    max-height: calc(100vh - 131px);
+  }
+
+  p {
+    @apply text-gray-500 text-center mt-5 text-xl tracking-wide;
+  }
+}

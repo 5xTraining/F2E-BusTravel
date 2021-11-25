@@ -1,0 +1,4 @@
+.wrap {
+  @apply flex justify-between px-4 bg-black lg:bg-desktop-black top-0 z-60 fixed w-full lg:top-16 h-[65px] lg:border-b border-gray-900;
+  max-width: 766px;
+}
